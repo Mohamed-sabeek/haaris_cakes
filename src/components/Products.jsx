@@ -18,14 +18,14 @@ const products = [
         name: 'Belgian Waffles',
         description: 'Crispy on the outside, fluffy inside. Served with premium toppings and love.',
         image: waffleImage,
-        price: 'Perfect for snacks'
+        price: 'Starting from ₹99'
     },
     {
         id: 3,
         name: 'Fudgy Brownies',
         description: 'Rich, gooey, and loaded with chocolate. The ultimate comfort treat.',
         image: brownieImage,
-        price: 'Box of 4/6/9 available'
+        price: 'Box starting from ₹150'
     }
 ];
 

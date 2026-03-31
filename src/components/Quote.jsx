@@ -1,5 +1,5 @@
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles } from 'lucide-react';
 
 const Quote = () => {
     return (
@@ -13,9 +13,7 @@ const Quote = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
                 >
-                    <div className="flex justify-center mb-6">
-                        <Sparkles className="text-secondary w-12 h-12 md:w-16 md:h-16 drop-shadow-glow" />
-                    </div>
+                    <span className="text-4xl sm:text-5xl md:text-6xl mb-6 block drop-shadow-lg">✨</span>
                     <h2 className="text-2xl sm:text-3xl md:text-5xl font-serif italic text-white/90 leading-tight">
                         "The secret ingredient is always <span className="text-gradient-main font-bold">love</span>"
                     </h2>

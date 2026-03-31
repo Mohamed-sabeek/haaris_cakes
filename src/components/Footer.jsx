@@ -32,7 +32,7 @@ const Footer = () => {
 
                 <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-white/30 text-sm">
                     <p>&copy; {new Date().getFullYear()} Haaris Cake's. All rights reserved.</p>
-                    <p className="flex items-center gap-2">Made with <Heart size={14} className="text-secondary fill-secondary animate-pulse" /> in Aranthangi</p>
+                    <p className="flex items-center gap-2">Made with <span className="text-secondary animate-pulse">💜</span> in Aranthangi</p>
                     <p>Powered by Riswana Assan</p>
                 </div>
             </div>

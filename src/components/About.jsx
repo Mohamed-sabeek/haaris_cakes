@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion';
-import { Cake, Utensils, Sparkles } from 'lucide-react';
+
+import cakeIcon from '../assets/cake_icon.png';
+import waffleIcon from '../assets/waffle_icon.png';
+import brownieIcon from '../assets/brownie_icon.png';
 
 const About = () => {
     return (
-        <section id="about" className="py-24 md:py-32 bg-secondary/5 relative overflow-hidden">
+        <section id="about" className="py-24 md:py-32 bg-secondary/5 relative overflow-hidden transition-all duration-300">
             {/* Subtle floating circles */}
             <div className="absolute top-1/4 -right-10 w-48 h-48 bg-primary/10 rounded-full blur-[100px]" />
             <div className="absolute bottom-1/4 -left-10 w-48 h-48 bg-secondary/10 rounded-full blur-[100px]" />
@@ -28,24 +31,36 @@ const About = () => {
                         We specialize in customized cakes, brownies, and waffles made with love and premium ingredients.
                     </p>
                     
-                    <div className="mt-16 grid grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-center">
-                        <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all group flex flex-col items-center">
-                            <div className="mb-4 group-hover:scale-110 transition-transform text-secondary">
-                                <Cake size={40} />
+                    <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch justify-center">
+                        <div className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all group flex flex-col items-center text-center shadow-xl">
+                            <div className="w-16 h-16 mb-6 group-hover:scale-110 transition-transform flex items-center justify-center">
+                                <img 
+                                    src={cakeIcon} 
+                                    alt="Custom Cakes" 
+                                    className="w-full h-full object-contain drop-shadow-2xl"
+                                />
                             </div>
-                            <span className="font-bold text-lg">Custom Cakes</span>
+                            <span className="font-bold text-xl tracking-tight">Custom Cakes</span>
                         </div>
-                        <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all group flex flex-col items-center">
-                            <div className="mb-4 group-hover:scale-110 transition-transform text-secondary">
-                                <Utensils size={40} />
+                        <div className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all group flex flex-col items-center text-center shadow-xl">
+                            <div className="w-16 h-16 mb-6 group-hover:scale-110 transition-transform flex items-center justify-center">
+                                <img 
+                                    src={waffleIcon} 
+                                    alt="Waffles" 
+                                    className="w-full h-full object-contain drop-shadow-2xl"
+                                />
                             </div>
-                            <span className="font-bold text-lg">Waffles</span>
+                            <span className="font-bold text-xl tracking-tight">Waffles</span>
                         </div>
-                        <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all group lg:col-span-1 col-span-2 flex flex-col items-center">
-                            <div className="mb-4 group-hover:scale-110 transition-transform text-secondary">
-                                <Sparkles size={40} />
+                        <div className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all group flex flex-col items-center text-center shadow-xl">
+                            <div className="w-16 h-16 mb-6 group-hover:scale-110 transition-transform flex items-center justify-center">
+                                <img 
+                                    src={brownieIcon} 
+                                    alt="Brownies" 
+                                    className="w-full h-full object-contain drop-shadow-2xl"
+                                />
                             </div>
-                            <span className="font-bold text-lg">Brownies</span>
+                            <span className="font-bold text-xl tracking-tight">Brownies</span>
                         </div>
                     </div>
                 </motion.div>

@@ -66,13 +66,11 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-base sm:text-lg md:text-2xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed flex items-center justify-center flex-wrap gap-x-2"
+                    className="text-base sm:text-lg md:text-2xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed"
                 >
-                    <span>Freshly baked with love</span>
-                    <Heart className="inline text-secondary fill-secondary" size={20} />
-                    <span>in Aranthangi.</span>
-                    <br className="hidden md:block w-full" />
-                    <span className="text-white/60 text-xs sm:text-sm md:text-lg w-full">Custom cakes, waffles & brownies made for your special moments.</span>
+                    Freshly baked with love 💜 in Aranthangi.
+                    <br className="hidden md:block" />
+                    <span className="text-white/60 text-xs sm:text-sm md:text-lg">Custom cakes, waffles & brownies made for your special moments.</span>
                 </motion.p>
 
                 <motion.div
