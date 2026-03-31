@@ -1,5 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import { Cake, Utensils, Sparkles } from 'lucide-react';
 
 const About = () => {
     return (
@@ -29,16 +29,22 @@ const About = () => {
                     </p>
                     
                     <div className="mt-16 grid grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-center">
-                        <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all group">
-                            <span className="block text-4xl mb-4 group-hover:scale-110 transition-transform">🍰</span>
+                        <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all group flex flex-col items-center">
+                            <div className="mb-4 group-hover:scale-110 transition-transform text-secondary">
+                                <Cake size={40} />
+                            </div>
                             <span className="font-bold text-lg">Custom Cakes</span>
                         </div>
-                        <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all group">
-                            <span className="block text-4xl mb-4 group-hover:scale-110 transition-transform">🧇</span>
+                        <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all group flex flex-col items-center">
+                            <div className="mb-4 group-hover:scale-110 transition-transform text-secondary">
+                                <Utensils size={40} />
+                            </div>
                             <span className="font-bold text-lg">Waffles</span>
                         </div>
-                        <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all group lg:col-span-1 col-span-2">
-                            <span className="block text-4xl mb-4 group-hover:scale-110 transition-transform">🍪</span>
+                        <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all group lg:col-span-1 col-span-2 flex flex-col items-center">
+                            <div className="mb-4 group-hover:scale-110 transition-transform text-secondary">
+                                <Sparkles size={40} />
+                            </div>
                             <span className="font-bold text-lg">Brownies</span>
                         </div>
                     </div>

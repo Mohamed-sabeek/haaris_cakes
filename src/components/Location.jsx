@@ -33,7 +33,7 @@ const Location = () => {
                                 </div>
                                 <div className="space-y-3">
                                     <h4 className="font-bold text-lg sm:text-xl flex items-center gap-2">
-                                        Shop Address 📍
+                                        Shop Address <MapPin size={18} className="text-secondary" />
                                     </h4>
                                     <p className="text-white/70 leading-relaxed text-base sm:text-lg font-medium">
                                         44, Veeramakali Amman Kovil St,<br />

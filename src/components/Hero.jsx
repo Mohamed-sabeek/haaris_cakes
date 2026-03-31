@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '../assets/logo.png';
-import { Phone, MessageCircle, X } from 'lucide-react';
+import { Phone, MessageCircle, X, Heart } from 'lucide-react';
 
 const Hero = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -10,7 +10,7 @@ const Hero = () => {
         <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
             {/* Background elements */}
             <div className="absolute top-1/4 -left-10 w-64 h-64 bg-primary/20 rounded-full blur-[120px]" />
-            <div className="absolute bottom-1/4 -right-10 w-64 h-64 bg-secondary/20 rounded-full blur-[120px]" />
+            <div className="absolute bottom-1/4 -right-10 w-64 h-64 bg-secondary/20 rounded-full blur-[120px] shadow-[0_0_100px_rgba(236,72,153,0.1)]" />
 
             <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
                 <motion.div
@@ -66,11 +66,13 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-base sm:text-lg md:text-2xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed"
+                    className="text-base sm:text-lg md:text-2xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed flex items-center justify-center flex-wrap gap-x-2"
                 >
-                    Freshly baked with love 💜 in Aranthangi.
-                    <br />
-                    <span className="text-white/60 text-xs sm:text-sm md:text-lg">Custom cakes, waffles & brownies made for your special moments.</span>
+                    <span>Freshly baked with love</span>
+                    <Heart className="inline text-secondary fill-secondary" size={20} />
+                    <span>in Aranthangi.</span>
+                    <br className="hidden md:block w-full" />
+                    <span className="text-white/60 text-xs sm:text-sm md:text-lg w-full">Custom cakes, waffles & brownies made for your special moments.</span>
                 </motion.p>
 
                 <motion.div

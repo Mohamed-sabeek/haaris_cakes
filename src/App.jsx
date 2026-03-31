@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Quote from './components/Quote';
 import About from './components/About';
 import Products from './components/Products';
 import Location from './components/Location';
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <Quote />
         <About />
         <Products />
         <Location />
