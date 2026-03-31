@@ -1,16 +1,154 @@
-# React + Vite
+# 🍰 Haaris Cakes – Premium Bakery Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and visually appealing website built for **Haaris Cakes**, a home-made bakery located in Aranthangi.
+This website showcases products, location, and contact details to help customers easily explore and place orders.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Website
 
-## React Compiler
+🔗 https://haaris-cakes.vercel.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📌 About the Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Haaris Cakes is a home-based bakery specializing in:
+
+* 🎂 Custom Cakes
+* 🧇 Waffles
+* 🍫 Brownies
+
+This website was created to:
+
+* Increase online visibility
+* Showcase products attractively
+* Enable customers to contact or visit the shop
+
+---
+
+## 🛠️ Tech Stack
+
+* ⚛️ React (Vite)
+* 🎨 Tailwind CSS
+* 📦 JavaScript (ES6+)
+* 🌐 Vercel (Deployment)
+
+---
+
+## ✨ Features
+
+* 🔥 Modern UI with pink & purple theme
+* 📱 Fully responsive (mobile-friendly)
+* 🧭 Smooth navigation
+* 📍 Embedded Google Maps (accurate location)
+* 💬 WhatsApp contact button
+* 📞 Direct call button
+* 🍰 Product showcase section
+* 🎯 Clean and minimal design
+
+---
+
+## 📍 Location
+
+📌 44, Veeramakali Amman Kovil St,
+Aranthangi, Tamil Nadu 614616
+
+📍 Google Maps integrated for easy navigation
+
+---
+
+## 📞 Contact
+
+* 📱 Phone: +91 9944362457
+* 💬 WhatsApp: https://wa.me/919944362457
+
+---
+
+## 📂 Project Structure
+
+```bash
+haaris_cakes/
+│
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Products.jsx
+│   │   ├── Location.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Footer.jsx
+│   │   └── FloatingButtons.jsx
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Mohamed-sabeek/haaris_cakes.git
+cd haaris_cakes
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+---
+
+## 🚀 Deployment
+
+This project is deployed using **Vercel**:
+
+* Connect GitHub repository
+* Auto build using Vite
+* Live in seconds ⚡
+
+---
+
+## 💡 Future Improvements
+
+* 🛒 Online order system
+* 💳 Payment integration
+* 🧾 Admin dashboard
+* ⭐ Customer reviews section
+* 📸 Gallery section
+
+---
+
+## 👨‍💻 Developer
+
+Developed by **Mohamed Sabeek**
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+---
