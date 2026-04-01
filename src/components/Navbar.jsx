@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
@@ -17,7 +16,7 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: 'Home', href: '/' },
+        { name: 'Home', href: '/#home' },
         { name: 'About', href: '/#about' },
         { name: 'Cakes & Desserts', href: '/menu', isNewPage: true },
         { name: 'Location', href: '/#location' },
@@ -27,7 +26,7 @@ const Navbar = () => {
     return (
         <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md py-4 border-b border-gray-100 shadow-sm' : 'bg-transparent py-6'}`}>
             <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-                <Link to="/" className="flex items-center gap-3 group">
+                <Link to="/#home" className="flex items-center gap-3 group">
                     <div className="relative">
                         <div className="absolute -inset-1 bg-gradient-main rounded-full blur-md opacity-0 group-hover:opacity-40 transition-opacity"></div>
                         <img src={logo} alt="Logo" className="relative w-12 h-12 rounded-full object-cover border border-pink-100 shadow-md" />
@@ -52,23 +51,21 @@ const Navbar = () => {
                                 ) : link.name}
                             </Link>
                         ) : (
-                            <HashLink
+                            <Link
                                 key={link.name}
-                                smooth
                                 to={link.href}
                                 className="text-gray-600 hover:text-pink-400 transition-colors font-medium"
                             >
                                 {link.name}
-                            </HashLink>
+                            </Link>
                         )
                     ))}
-                    <HashLink
-                        smooth
+                    <Link
                         to="/#contact"
                         className="bg-gradient-to-r from-pink-400 to-blue-400 text-white px-6 py-2.5 rounded-full font-bold shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300"
                     >
                         Order Now
-                    </HashLink>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -100,15 +97,14 @@ const Navbar = () => {
                                     ) : link.name}
                                 </Link>
                             ) : (
-                                <HashLink
+                                <Link
                                     key={link.name}
-                                    smooth
                                     to={link.href}
                                     className="text-xl font-semibold text-gray-800 hover:text-pink-400 transition-colors"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {link.name}
-                                </HashLink>
+                                </Link>
                             )
                         ))}
                         <a

@@ -12,7 +12,11 @@
 }
 
 @layer base {
-  body {
+  html {
+  scroll-behavior: smooth;
+}
+
+body {
     @apply bg-background text-text-dark antialiased selection:bg-pastel-pink/30;
     font-family: var(--font-outfit);
   }

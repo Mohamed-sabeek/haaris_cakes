@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingButtons from './components/FloatingButtons';
 import Menu from './pages/Menu';
+import ScrollToSection from './components/ScrollToSection';
 import { useEffect } from 'react';
 
 // Scroll to top on route change
@@ -35,6 +36,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <ScrollToSection />
       <div className="bg-gradient-to-br from-pink-50 via-white to-blue-50 min-h-screen text-gray-800 font-outfit selection:bg-pink-200">
         <Navbar />
         <Routes>
