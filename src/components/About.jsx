@@ -26,14 +26,30 @@ const About = () => {
                     
                     <div className="w-24 h-[3px] bg-gradient-main mx-auto mb-10 rounded-full"></div>
                     
-                    <p className="text-lg md:text-2xl text-white/70 leading-relaxed max-w-3xl mx-auto">
+                    <p className="text-lg md:text-2xl text-white/70 leading-relaxed max-w-3xl mx-auto mb-6">
                         Haaris Cake's is a home-based bakery run by <span className="text-white font-semibold">Riswana Assan</span> in Aranthangi. 
                         We specialize in customized cakes, brownies, and waffles made with love and premium ingredients.
                     </p>
+
+                    {/* Trust markers */}
+                    <div className="flex flex-col items-center gap-2 mb-12 opacity-80">
+                        <span className="text-sm font-medium tracking-wide flex items-center gap-2">
+                            <span className="text-secondary text-base">✔</span> Freshly made to order
+                        </span>
+                        <span className="text-sm font-medium tracking-wide flex items-center gap-2">
+                            <span className="text-secondary text-base">✔</span> Custom designs available
+                        </span>
+                        <span className="text-sm font-medium tracking-wide flex items-center gap-2">
+                            <span className="text-secondary text-base">✔</span> Quality ingredients only
+                        </span>
+                    </div>
                     
-                    <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch justify-center">
-                        <div className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all group flex flex-col items-center text-center shadow-xl">
-                            <div className="w-16 h-16 mb-6 group-hover:scale-110 transition-transform flex items-center justify-center">
+                    <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                        {/* Background subtle depth glow */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-main opacity-[0.03] blur-[120px] rounded-full pointer-events-none" />
+
+                        <div className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all duration-300 group flex flex-col items-center text-center shadow-xl hover:scale-105 cursor-default relative overflow-hidden">
+                            <div className="w-16 h-16 mb-6 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
                                 <img 
                                     src={cakeIcon} 
                                     alt="Custom Cakes" 
@@ -41,9 +57,11 @@ const About = () => {
                                 />
                             </div>
                             <span className="font-bold text-xl tracking-tight">Custom Cakes</span>
+                            <p className="text-sm text-white/60 mt-2 leading-relaxed">Designed for your special occasions</p>
                         </div>
-                        <div className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all group flex flex-col items-center text-center shadow-xl">
-                            <div className="w-16 h-16 mb-6 group-hover:scale-110 transition-transform flex items-center justify-center">
+
+                        <div className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all duration-300 group flex flex-col items-center text-center shadow-xl hover:scale-105 cursor-default relative overflow-hidden">
+                            <div className="w-16 h-16 mb-6 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
                                 <img 
                                     src={waffleIcon} 
                                     alt="Waffles" 
@@ -51,9 +69,11 @@ const About = () => {
                                 />
                             </div>
                             <span className="font-bold text-xl tracking-tight">Waffles</span>
+                            <p className="text-sm text-white/60 mt-2 leading-relaxed">Fresh & crispy delights</p>
                         </div>
-                        <div className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all group flex flex-col items-center text-center shadow-xl">
-                            <div className="w-16 h-16 mb-6 group-hover:scale-110 transition-transform flex items-center justify-center">
+
+                        <div className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-secondary/30 transition-all duration-300 group flex flex-col items-center text-center shadow-xl hover:scale-105 cursor-default relative overflow-hidden">
+                            <div className="w-16 h-16 mb-6 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
                                 <img 
                                     src={brownieIcon} 
                                     alt="Brownies" 
@@ -61,8 +81,10 @@ const About = () => {
                                 />
                             </div>
                             <span className="font-bold text-xl tracking-tight">Brownies</span>
+                            <p className="text-sm text-white/60 mt-2 leading-relaxed">Rich and chocolatey treats</p>
                         </div>
                     </div>
+
                 </motion.div>
             </div>
         </section>

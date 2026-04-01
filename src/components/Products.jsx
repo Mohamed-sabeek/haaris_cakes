@@ -1,6 +1,7 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle } from 'lucide-react';
+import ImageModal from './ImageModal';
 import cakeImage from '../assets/cake.png';
 import waffleImage from '../assets/waffles.png';
 import brownieImage from '../assets/brownies.png';
@@ -30,8 +31,15 @@ const products = [
 ];
 
 const Products = () => {
+    const [selectedImage, setSelectedImage] = useState(null);
+
     return (
         <section id="products" className="py-24 md:py-32 bg-background">
+            <ImageModal 
+                isOpen={!!selectedImage} 
+                image={selectedImage} 
+                onClose={() => setSelectedImage(null)} 
+            />
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <motion.h2
@@ -63,13 +71,16 @@ const Products = () => {
                             transition={{ delay: idx * 0.1 }}
                             className="group relative bg-white/5 rounded-3xl overflow-hidden border border-white/10 hover:border-secondary/30 transition-all duration-500"
                         >
-                            <div className="relative aspect-[4/5] overflow-hidden">
+                            <div 
+                                className="relative aspect-[4/5] overflow-hidden cursor-pointer group/image"
+                                onClick={() => setSelectedImage(product.image)}
+                            >
                                 <img
                                     src={product.image}
                                     alt={product.name}
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover/image:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover/image:opacity-80 transition-opacity" />
                                 
                                 <div className="absolute top-4 left-4">
                                     <span className="px-4 py-1 rounded-full bg-black/40 backdrop-blur-md border border-white/10 text-sm font-medium text-white/90">
