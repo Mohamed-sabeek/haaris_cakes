@@ -44,8 +44,8 @@ export const PhoneEmojiIcon = ({ size = 28, className = "" }) => (
     >
         <defs>
             <linearGradient id="phoneGradient" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#FB7185" />
-                <stop offset="1" stopColor="#E11D48" />
+                <stop stopColor="#FF4D4D" />
+                <stop offset="1" stopColor="#F43F5E" />
             </linearGradient>
             <filter id="phoneShadow" x="-20%" y="-20%" width="140%" height="140%">
                 <feGaussianBlur in="SourceAlpha" stdDeviation="1.5" />

@@ -1,15 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0F0F0F;
-  --color-primary: #7C3AED;
-  --color-secondary: #EC4899;
+  --color-background: #FFF5F7;
+  --color-primary: #F8C8DC;
+  --color-secondary: #A7D8F2;
+  --color-pastel-pink: #F8C8DC;
+  --color-pastel-blue: #A7D8F2;
+  --color-text-dark: #2D2D2D;
+  --color-text-secondary: #6B7280;
   --font-outfit: "Outfit", sans-serif;
 }
 
 @layer base {
   body {
-    @apply bg-background text-white antialiased selection:bg-primary/30;
+    @apply bg-background text-text-dark antialiased selection:bg-pastel-pink/30;
     font-family: var(--font-outfit);
   }
   
@@ -26,21 +30,22 @@
 
 @layer utilities {
   .bg-gradient-main {
-    background: linear-gradient(90deg, #7C3AED, #EC4899);
+    background: linear-gradient(90deg, #F8C8DC, #A7D8F2);
   }
   
   .text-gradient-main {
-    background: linear-gradient(90deg, #7C3AED, #EC4899);
+    background: linear-gradient(90deg, #F8C8DC, #A7D8F2);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-  .glow-purple {
-    box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+  .shadow-soft {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   }
 
-  .glow-pink {
-    box-shadow: 0 0 20px rgba(236, 72, 153, 0.3);
+  .shadow-soft-lg {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   }
 }
+

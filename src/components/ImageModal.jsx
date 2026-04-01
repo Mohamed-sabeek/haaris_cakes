@@ -32,12 +32,12 @@ const ImageModal = ({ isOpen, image, onClose }) => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     onClick={onClose}
-                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 md:p-8"
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-white/90 backdrop-blur-sm p-4 md:p-8"
                 >
                     <motion.button
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        className="absolute top-4 right-4 z-50 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors duration-200"
+                        className="absolute top-4 right-4 z-50 p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800 transition-colors duration-200 shadow-md"
                         onClick={(e) => {
                             e.stopPropagation();
                             onClose();
@@ -56,7 +56,7 @@ const ImageModal = ({ isOpen, image, onClose }) => {
                         <img
                             src={image}
                             alt="Preview"
-                            className="max-w-full max-h-full object-contain rounded-[2rem] shadow-2xl border border-white/10"
+                            className="max-w-full max-h-full object-contain rounded-[2rem] shadow-2xl border border-gray-100"
                         />
                     </motion.div>
                 </motion.div>

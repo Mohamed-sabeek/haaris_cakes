@@ -15,11 +15,11 @@ const FloatingButtons = () => {
                 transition={{ delay: 2, duration: 0.5, type: 'spring' }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="group flex items-center justify-center bg-[#25D366] text-white p-4 rounded-full shadow-[0_10px_40px_rgba(37,211,102,0.5)] border-2 border-white/10 relative overflow-hidden"
+                className="group flex items-center justify-center bg-pink-400 text-white p-4 rounded-full shadow-lg shadow-pink-200/50 border-2 border-white/20 relative overflow-hidden"
             >
                 <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <MessageCircle size={32} />
-                <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs group-hover:ml-3 transition-all duration-500 font-bold">
+                <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-[200px] group-hover:ml-3 transition-all duration-500 font-bold">
                     Order Now
                 </span>
             </motion.a>
@@ -32,11 +32,11 @@ const FloatingButtons = () => {
                 transition={{ delay: 2.2, duration: 0.5, type: 'spring' }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="group flex items-center justify-center bg-white text-black p-4 rounded-full shadow-[0_10px_40px_rgba(255,255,255,0.3)] border-2 border-black/10 relative overflow-hidden"
+                className="group flex items-center justify-center bg-blue-400 text-white p-4 rounded-full shadow-lg shadow-blue-200/50 border-2 border-white/20 relative overflow-hidden"
             >
-                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <Phone size={32} />
-                <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs group-hover:ml-3 transition-all duration-500 font-bold">
+                <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-[200px] group-hover:ml-3 transition-all duration-500 font-bold">
                     Call Riswana
                 </span>
             </motion.a>
