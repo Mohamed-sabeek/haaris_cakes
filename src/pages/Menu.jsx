@@ -12,7 +12,7 @@ import gulabJamoon from "../assets/gulabJamoon.jpeg";
 import gulfi from "../assets/gulfi.png";
 import kitkat from "../assets/kitkat.png";
 import whiteTruffle from "../assets/whiteTruffle.png";
-import chocoTruffle from "../assets/chocoTruffle.jpeg";
+import chocoTruffle from "../assets/chocoTruffle.png";
 import chocoAlmond from "../assets/chocoAlmond.png";
 import honeyAlmond from "../assets/honeyAlmond.png";
 import nuttyBubble from "../assets/nuttyBubble.png";
