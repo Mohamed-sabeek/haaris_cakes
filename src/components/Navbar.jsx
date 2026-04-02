@@ -17,9 +17,9 @@ const Navbar = () => {
 
     const navLinks = [
         { name: 'Home', href: '/#home' },
+        { name: 'Cakes', href: '/cakes', isNewPage: true },
+        { name: 'Desserts', href: '/desserts', isNewPage: true },
         { name: 'About', href: '/#about' },
-        { name: 'Cakes & Desserts', href: '/menu', isNewPage: true },
-        { name: 'Location', href: '/#location' },
         { name: 'Contact', href: '/#contact' },
     ];
 
@@ -37,28 +37,13 @@ const Navbar = () => {
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-8">
                     {navLinks.map((link) => (
-                        link.isNewPage ? (
-                            <Link
-                                key={link.name}
-                                to={link.href}
-                                className="text-gray-600 hover:text-pink-400 transition-colors font-medium"
-                            >
-                                {link.name === 'Cakes & Desserts' ? (
-                                    <>
-                                        <span className="hidden md:inline">Cakes & Desserts</span>
-                                        <span className="md:hidden">Menu</span>
-                                    </>
-                                ) : link.name}
-                            </Link>
-                        ) : (
-                            <Link
-                                key={link.name}
-                                to={link.href}
-                                className="text-gray-600 hover:text-pink-400 transition-colors font-medium"
-                            >
-                                {link.name}
-                            </Link>
-                        )
+                        <Link
+                            key={link.name}
+                            to={link.href}
+                            className="text-gray-600 hover:text-pink-400 transition-colors font-medium"
+                        >
+                            {link.name}
+                        </Link>
                     ))}
                     <Link
                         to="/#contact"
@@ -82,30 +67,14 @@ const Navbar = () => {
                 <div className="md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-t border-gray-100 py-8 shadow-xl animate-in slide-in-from-top duration-300">
                     <div className="flex flex-col items-center gap-6">
                         {navLinks.map((link) => (
-                            link.isNewPage ? (
-                                <Link
-                                    key={link.name}
-                                    to={link.href}
-                                    className="text-xl font-semibold text-gray-800 hover:text-pink-400 transition-colors"
-                                    onClick={() => setIsOpen(false)}
-                                >
-                                    {link.name === 'Cakes & Desserts' ? (
-                                        <>
-                                            <span className="hidden md:inline">Cakes & Desserts</span>
-                                            <span className="md:hidden">Menu</span>
-                                        </>
-                                    ) : link.name}
-                                </Link>
-                            ) : (
-                                <Link
-                                    key={link.name}
-                                    to={link.href}
-                                    className="text-xl font-semibold text-gray-800 hover:text-pink-400 transition-colors"
-                                    onClick={() => setIsOpen(false)}
-                                >
-                                    {link.name}
-                                </Link>
-                            )
+                            <Link
+                                key={link.name}
+                                to={link.href}
+                                className="text-xl font-semibold text-gray-800 hover:text-pink-400 transition-colors"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                {link.name}
+                            </Link>
                         ))}
                         <a
                             href="#contact"
@@ -117,6 +86,7 @@ const Navbar = () => {
                     </div>
                 </div>
             )}
+
         </nav>
     );
 };

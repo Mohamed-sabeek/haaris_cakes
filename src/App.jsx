@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Quote from './components/Quote';
@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingButtons from './components/FloatingButtons';
 import Menu from './pages/Menu';
+import Desserts from './pages/Desserts';
 import ScrollToSection from './components/ScrollToSection';
 import { useEffect } from 'react';
 
@@ -41,7 +42,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/menu" element={<Menu />} />
+          <Route path="/cakes" element={<Menu />} />
+          <Route path="/desserts" element={<Desserts />} />
+          <Route path="/menu" element={<Navigate to="/cakes" replace />} />
         </Routes>
         <Footer />
         <FloatingButtons />
@@ -51,3 +54,4 @@ function App() {
 }
 
 export default App;
+

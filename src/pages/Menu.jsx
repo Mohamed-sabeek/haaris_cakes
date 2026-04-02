@@ -158,7 +158,7 @@ const Menu = () => {
                         Back to Home
                     </Link>
                     <h1 className="text-4xl md:text-6xl font-black text-gray-800 tracking-tighter">
-                        Our Full <span className="bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent">Menu</span>
+                        Our <span className="bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent">Cakes</span>
                     </h1>
                 </div>
 
@@ -183,6 +183,7 @@ const Menu = () => {
                                 <input
                                     type="text"
                                     placeholder="Search for your favorite cake..."
+
                                     value={searchQuery}
                                     onChange={(e) => setSearchQuery(e.target.value)}
                                     className="block w-full pl-12 pr-12 py-3.5 bg-white border-2 border-gray-100 rounded-[1.5rem] sm:rounded-[2rem] text-gray-800 placeholder-gray-400 focus:outline-none focus:border-pink-200 focus:ring-4 focus:ring-pink-50 transition-all shadow-lg shadow-gray-100/50"
