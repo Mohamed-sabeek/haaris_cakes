@@ -33,22 +33,28 @@ const About = () => {
 
 
                     {/* Trust markers */}
-                    <div className="flex flex-col items-center gap-2 mb-12 text-gray-500">
-                        <span className="text-sm font-bold tracking-wide flex items-center gap-2 text-pink-500 bg-pink-50 px-4 py-1 rounded-full border border-pink-100">
-                            ✨ 5+ Years of Baking Excellence
-                        </span>
-                        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-2">
-                            <span className="text-sm font-medium tracking-wide flex items-center gap-2">
+                    <div className="flex flex-col items-center gap-3 mb-12 text-gray-500">
+                        <div className="flex flex-wrap justify-center gap-3 mb-2">
+                            <span className="text-sm font-bold tracking-wide flex items-center gap-2 text-pink-500 bg-pink-50 px-4 py-1.5 rounded-full border border-pink-100 shadow-sm">
+                                ✨ 5+ Years of Baking Excellence
+                            </span>
+                            <span className="text-sm font-bold tracking-wide flex items-center gap-2 text-blue-500 bg-blue-50 px-4 py-1.5 rounded-full border border-blue-100 shadow-sm">
+                                🎈 Venue Setup Available
+                            </span>
+                        </div>
+                        <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mt-2">
+                            <span className="text-sm font-medium tracking-wide flex items-center gap-2 opacity-80">
                                 <span className="text-pink-400 text-base">✔</span> Freshly made to order
                             </span>
-                            <span className="text-sm font-medium tracking-wide flex items-center gap-2">
+                            <span className="text-sm font-medium tracking-wide flex items-center gap-2 opacity-80">
                                 <span className="text-pink-400 text-base">✔</span> Custom designs available
                             </span>
-                            <span className="text-sm font-medium tracking-wide flex items-center gap-2">
+                            <span className="text-sm font-medium tracking-wide flex items-center gap-2 opacity-80">
                                 <span className="text-pink-400 text-base">✔</span> Quality ingredients only
                             </span>
                         </div>
                     </div>
+
 
                     
                     <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 relative">
