@@ -8,7 +8,7 @@ import ImageModal from "../components/ImageModal";
 import brownieImage from "../assets/brownies.webp";
 import waffleImage from "../assets/waffles.webp";
 import cakeBowlImage from "../assets/cake.webp";
-import bunImage from "../assets/vanilla.png";
+import bunImage from "../assets/vanilla.webp";
 import hotChocoImage from "../assets/chocoTruffle.webp";
 import pistaChocoImage from "../assets/pista.webp";
 
