@@ -12,11 +12,12 @@ import gulabJamoon from "../assets/gulabJamoon.jpeg";
 import gulfi from "../assets/gulfi.png";
 import kitkat from "../assets/kitkat.png";
 import whiteTruffle from "../assets/whiteTruffle.png";
-import chocoTruffle from "../assets/chocoTruffle.png";
+import chocoTruffle from "../assets/chocoTruffle.jpeg";
 import chocoAlmond from "../assets/chocoAlmond.png";
 import honeyAlmond from "../assets/honeyAlmond.png";
 import nuttyBubble from "../assets/nuttyBubble.png";
 import darkFantasy from "../assets/darkFantasy.png";
+
 const placeholderImage = "https://via.placeholder.com/400x300?text=Cake+Image";
 
 const premiumCakes = [
