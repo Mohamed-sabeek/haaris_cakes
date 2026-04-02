@@ -1,8 +1,15 @@
-import React from 'react';
 import { Phone, MessageCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 
 const FloatingButtons = () => {
+    const location = useLocation();
+
+    // Hide on menu page
+    if (location.pathname === '/menu') {
+        return null;
+    }
+
     return (
         <div className="fixed bottom-8 right-6 z-50 flex flex-col gap-4">
             {/* WhatsApp Button */}
