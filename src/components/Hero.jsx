@@ -85,7 +85,7 @@ const Hero = () => {
                             Best Homemade Cakes in Aranthangi 🎂
                         </p>
                         <p className="text-base md:text-lg text-gray-600">
-                            Fresh cakes in Pudukkottai district • Custom birthday cakes and desserts
+                            Fresh and Custom birthday cakes and desserts
                         </p>
                         <div className="flex flex-wrap justify-center gap-3">
                             <div className="inline-block py-1.5 px-6 bg-gradient-to-r from-pink-100 to-blue-100 border border-white/50 rounded-full shadow-sm">
@@ -144,14 +144,23 @@ const Hero = () => {
                         className="flex flex-col items-center"
                     >
                         <p className="text-xs text-gray-500 mt-2">
-                            Browse all cakes & prices before ordering
+                            Browse our menu for cakes & desserts
                         </p>
-                        <Link to="/menu">
-                            <button className="mt-2 px-6 py-2.5 rounded-full text-sm border border-pink-300 text-pink-500 bg-white hover:bg-pink-50 transition-all duration-300 shadow-sm hover:shadow-md flex items-center gap-2 font-medium">
-                                🍰 View Full Menu
-                            </button>
-                        </Link>
+                        <div className="mt-4 flex flex-wrap justify-center gap-4">
+                            <Link to="/cakes">
+                                <button className="px-8 py-3.5 rounded-full text-sm sm:text-base bg-gradient-to-r from-pink-400 to-pink-500 text-white hover:from-pink-500 hover:to-pink-600 transition-all duration-300 shadow-lg shadow-pink-200/50 hover:shadow-pink-300/60 hover:scale-105 active:scale-95 flex items-center gap-2 font-extrabold tracking-tight">
+                                    🎂 View Cakes
+                                </button>
+                            </Link>
+                            <Link to="/desserts">
+                                <button className="px-8 py-3.5 rounded-full text-sm sm:text-base bg-gradient-to-r from-blue-400 to-blue-500 text-white hover:from-blue-500 hover:to-blue-600 transition-all duration-300 shadow-lg shadow-blue-200/50 hover:shadow-blue-300/60 hover:scale-105 active:scale-95 flex items-center gap-2 font-extrabold tracking-tight">
+                                    🍨 View Desserts
+                                </button>
+                            </Link>
+                        </div>
                     </motion.div>
+
+
 
                     <OrderNotice />
 

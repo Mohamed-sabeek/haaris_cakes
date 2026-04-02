@@ -5,10 +5,12 @@ import { useLocation } from 'react-router-dom';
 const FloatingButtons = () => {
     const location = useLocation();
 
-    // Hide on menu page
-    if (location.pathname === '/menu') {
+    // Hide on Cakes and Desserts pages
+    const hidePaths = ['/cakes', '/desserts', '/menu'];
+    if (hidePaths.includes(location.pathname)) {
         return null;
     }
+
 
     return (
         <div className="fixed bottom-8 right-6 z-50 flex flex-col gap-4">

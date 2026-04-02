@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageCircle, ArrowRight } from 'lucide-react';
+import { MessageCircle, ArrowRight, ShoppingBag } from 'lucide-react';
+
 import { Link } from 'react-router-dom';
 import ImageModal from './ImageModal';
 import cakeImage from '../assets/cake.webp';
@@ -13,21 +14,24 @@ const products = [
         name: 'Chocolate Cake',
         description: 'Rich, moist chocolate sponge with premium ganache.',
         image: cakeImage,
-        price: 'Best Seller ✨'
+        price: 'Best Seller ✨',
+        link: '/cakes'
     },
     {
         id: 2,
         name: 'Belgian Waffles',
         description: 'Crispy on the outside, fluffy inside. Served with premium toppings and love.',
         image: waffleImage,
-        price: 'Classic Favorite 🧇'
+        price: 'Classic Favorite 🧇',
+        link: '/desserts'
     },
     {
         id: 3,
         name: 'Fudgy Brownies',
         description: 'Rich, gooey, and loaded with chocolate. The ultimate comfort treat.',
         image: brownieImage,
-        price: 'Premium Choice 🍫'
+        price: 'Premium Choice 🍫',
+        link: '/desserts'
     }
 ];
 
@@ -72,9 +76,9 @@ const Products = () => {
                             transition={{ delay: idx * 0.1 }}
                             className="group relative bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-lg shadow-gray-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
                         >
-                            <div 
-                                className="relative aspect-[4/5] overflow-hidden cursor-pointer group/image"
-                                onClick={() => setSelectedImage(product.image)}
+                            <Link 
+                                to={product.link}
+                                className="relative aspect-[4/5] overflow-hidden cursor-pointer group/image block"
                             >
                                 <img
                                     src={product.image}
@@ -88,42 +92,56 @@ const Products = () => {
                                         {product.price}
                                     </span>
                                 </div>
-                            </div>
+                            </Link>
+
 
                             <div className="p-8">
-                                <h4 className="text-2xl font-bold mb-3 text-gray-800 group-hover:text-pink-400 mb-1 transition-colors">{product.name}</h4>
+                                <Link to={product.link}>
+                                    <h4 className="text-2xl font-bold mb-3 text-gray-800 hover:text-pink-400 transition-colors cursor-pointer">
+                                        {product.name}
+                                    </h4>
+                                </Link>
                                 <p className="text-gray-500 text-sm mb-8 leading-relaxed">
                                     {product.description}
                                 </p>
                                 
-                                <a
-                                    href={`https://wa.me/919944362457?text=Hello%20I%20want%20to%20order%20${product.name.replace(' ', '%20')}%20from%20Haaris%20Cake's`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                <Link
+                                    to={product.link}
                                     className="flex items-center justify-center gap-2 w-full py-4.5 bg-gradient-to-r from-pink-400 to-blue-400 text-white rounded-2xl font-bold transition-all shadow-md hover:shadow-lg hover:scale-105"
                                 >
-                                    <MessageCircle size={20} />
-                                    Order on WhatsApp
-                                </a>
+                                    <ShoppingBag size={20} />
+                                    Order Now
+                                </Link>
                             </div>
+
                         </motion.div>
                     ))}
                 </div>
+
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="mt-16 text-center"
+                    className="mt-16 flex flex-wrap items-center justify-center gap-6"
                 >
                     <Link
-                        to="/menu"
-                        className="inline-flex items-center gap-3 bg-white text-gray-800 border-2 border-pink-100 px-10 py-4 rounded-full font-bold shadow-md hover:shadow-lg hover:bg-pink-50 hover:scale-105 transition-all duration-300 group"
+                        to="/cakes"
+                        className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-400 to-pink-500 text-white px-10 py-4.5 rounded-full font-extrabold shadow-lg shadow-pink-200/50 hover:shadow-pink-300/60 hover:scale-105 hover:from-pink-500 hover:to-pink-600 active:scale-95 transition-all duration-300 group"
                     >
-                        View Full Menu
-                        <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                        🎂 View Cakes
+                        <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                    <Link
+                        to="/desserts"
+                        className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-400 to-blue-500 text-white px-10 py-4.5 rounded-full font-extrabold shadow-lg shadow-blue-200/50 hover:shadow-blue-300/60 hover:scale-105 hover:from-blue-500 hover:to-blue-600 active:scale-95 transition-all duration-300 group"
+                    >
+                        🍨 View Desserts
+                        <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
                     </Link>
                 </motion.div>
+
+
             </div>
         </section>
     );

@@ -5,51 +5,58 @@ import { ArrowLeft, MessageCircle, ShoppingBag, Search, X } from "lucide-react";
 import ImageModal from "../components/ImageModal";
 
 // Assets
-import brownieImage from "../assets/brownies.webp";
-import waffleImage from "../assets/waffles.webp";
-import cakeBowlImage from "../assets/cake.webp";
-import bunImage from "../assets/vanilla.webp";
-import hotChocoImage from "../assets/chocoTruffle.webp";
-import pistaChocoImage from "../assets/pista.webp";
+import brownieImage from "../assets/brownie.webp";
+import tripleChocoBrownieImage from "../assets/tripleChocoBrownie.webp";
+import doubleChocoBrownieImage from "../assets/doubleChocoBrownie.webp";
+import hotChocoBrownieImage from "../assets/hotChocoBrownie.webp";
+import koreanCreamCheeseBunImage from "../assets/koreanCreamCheeseBun.webp";
+import tripleChocoWaffleImage from "../assets/tripleChocoWaffle.webp";
+import blueBerryWaffleImage from "../assets/blueBerryWaffle.webp";
+import brownieChocoImage from "../assets/brownieChocoBowl.webp";
+import chocoCakeBowlImage from "../assets/chocoCakeBowl.webp";
+import tripleHotChocoImage from "../assets/tripleHotChoco.webp";
+import pistaChocoImage from "../assets/pistaChoco.webp";
+
 
 const dessertCategories = [
+    {
+        title: "Waffles",
+        items: [
+            { name: "Triple Chocolate Waffle", price: 150, image: tripleChocoWaffleImage, isBestSeller: true, badgeText: "Best Seller ✨" },
+            { name: "Blueberry Waffle", price: 120, image: blueBerryWaffleImage },
+        ]
+    },
     {
         title: "Brownies",
         items: [
             { name: "Brownie Special", price: 60, image: brownieImage, isBestSeller: true, badgeText: "Best Seller ✨" },
-            { name: "Triple Chocolate", price: 80, image: brownieImage, isBestSeller: true, badgeText: "Must Try 🔥" },
-            { name: "Double Chocolate", price: 70, image: brownieImage },
-            { name: "Hot Chocolate", price: 120, image: hotChocoImage },
+            { name: "Triple Chocolate", price: 80, image: tripleChocoBrownieImage, isBestSeller: true, badgeText: "Must Try 🔥" },
+            { name: "Double Chocolate", price: 70, image: doubleChocoBrownieImage },
+            { name: "Hot Chocolate", price: 120, image: hotChocoBrownieImage },
         ]
     },
     {
         title: "Buns",
         items: [
-            { name: "Korean Cream Cheese Bun", price: 50, image: bunImage, isBestSeller: true, badgeText: "Favorite 💜" },
-        ]
-    },
-    {
-        title: "Waffles",
-        items: [
-            { name: "Triple Chocolate", price: 150, image: waffleImage, isBestSeller: true, badgeText: "Best Seller ✨" },
-            { name: "Blueberry", price: 120, image: waffleImage },
+            { name: "Korean Cream Cheese Bun", price: 50, image: koreanCreamCheeseBunImage, isBestSeller: true, badgeText: "Favorite 💜" },
         ]
     },
     {
         title: "Cake Bowls",
         items: [
-            { name: "Brownie Chocolate Bowl", price: 250, image: brownieImage, isBestSeller: true, badgeText: "Premium Choice 🌟" },
-            { name: "Chocolate Cake Bowl", price: 200, image: cakeBowlImage },
+            { name: "Brownie Chocolate Bowl", price: 250, image: brownieChocoImage, isBestSeller: true, badgeText: "Premium Choice 🌟" },
+            { name: "Chocolate Cake Bowl", price: 200, image: chocoCakeBowlImage },
         ]
     },
     {
         title: "Hot Chocolate",
         items: [
-            { name: "Triple Chocolate", price: 100, image: hotChocoImage, isBestSeller: true },
+            { name: "Triple Chocolate", price: 100, image: tripleHotChocoImage, isBestSeller: true },
             { name: "Pista Choco", price: 140, image: pistaChocoImage },
         ]
     }
 ];
+
 
 const DessertCard = ({ item, onImageClick }) => {
     const handleOrder = () => {
@@ -90,8 +97,9 @@ const DessertCard = ({ item, onImageClick }) => {
                 <div className="flex items-center justify-between bg-pink-50/50 px-3 py-2 sm:px-4 sm:py-3 rounded-lg sm:rounded-xl mb-4 sm:mb-6">
                     <span className="text-lg sm:text-xl font-black text-pink-500">₹{item.price}</span>
                     <span className="text-[10px] sm:text-xs font-medium text-gray-500">
-                        Delivery above ₹300
+                        Delivery available for ₹300+
                     </span>
+
                 </div>
             </div>
 
@@ -153,8 +161,9 @@ const Desserts = () => {
                                     className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-pink-500/10 to-blue-500/10 border border-pink-100 text-pink-600 text-xs sm:text-sm font-bold whitespace-nowrap"
                                 >
                                     <span className="animate-bounce">🚚</span>
-                                    Free Delivery above ₹300
+                                    Delivery available only for orders above ₹300
                                 </motion.div>
+
                                 
                                 <div className="relative group flex-grow max-w-2xl">
                                     <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400 group-focus-within:text-pink-400 transition-colors">
@@ -183,7 +192,7 @@ const Desserts = () => {
                                     <span className="text-[10px] sm:text-xs font-medium text-gray-500 whitespace-nowrap uppercase tracking-wider">Suggested:</span>
                                     <div className="flex gap-2">
                                         {[
-                                            "Brownies", "Waffles", "Triple Chocolate", "Korean Bun", 
+                                            "Brownie", "Waffle", "Triple Chocolate", "Korean Cream Cheese Bun", 
                                             "Cake Bowl", "Hot Chocolate", "Blueberry"
                                         ].map((suggestion) => (
                                             <button

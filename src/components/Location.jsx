@@ -46,14 +46,23 @@ const Location = () => {
                                 </div>
                             </div>
 
-                            <div className="w-full max-w-md lg:max-w-none p-4 rounded-xl bg-gradient-to-r from-pink-50 to-blue-50 border border-gray-100 shadow-sm">
-                                <p className="text-sm font-semibold text-gray-700 mb-1 flex items-center gap-2">
-                                    🚚 Delivery Available In
+                            <div className="w-full max-w-md lg:max-w-none p-6 rounded-2xl bg-white border border-pink-100 shadow-sm hover:shadow-md transition-all">
+                                <p className="text-xs font-black text-pink-400 mb-4 flex items-center gap-2 uppercase tracking-[0.2em]">
+                                    <span className="flex h-2 w-2 rounded-full bg-pink-400 animate-pulse"></span>
+                                    Delivery Available In
                                 </p>
-                                <p className="text-sm text-gray-600 leading-relaxed font-medium">
-                                    Nagudi, Avudaiyarkoil, Erichi, Pudupatti, Arasarkulam
-                                </p>
+                                <div className="flex flex-wrap gap-2">
+                                    {["Nagudi", "Avudaiyarkoil", "Erichi", "Pudupatti", "Arasarkulam"].map((loc) => (
+                                        <span 
+                                            key={loc}
+                                            className="px-4 py-2 rounded-full bg-gradient-to-r from-pink-50 to-blue-50 border border-pink-100/50 text-gray-700 text-sm font-bold shadow-sm hover:scale-105 transition-transform"
+                                        >
+                                            📍 {loc}
+                                        </span>
+                                    ))}
+                                </div>
                             </div>
+
 
                             <a
                                 href={externalMapUrl}
