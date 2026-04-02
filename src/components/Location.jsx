@@ -46,6 +46,15 @@ const Location = () => {
                                 </div>
                             </div>
 
+                            <div className="w-full max-w-md lg:max-w-none p-4 rounded-xl bg-gradient-to-r from-pink-50 to-blue-50 border border-gray-100 shadow-sm">
+                                <p className="text-sm font-semibold text-gray-700 mb-1 flex items-center gap-2">
+                                    🚚 Delivery Available In
+                                </p>
+                                <p className="text-sm text-gray-600 leading-relaxed font-medium">
+                                    Nagudi, Avudaiyarkoil, Erichi, Pudupatti, Arasarkulam
+                                </p>
+                            </div>
+
                             <a
                                 href={externalMapUrl}
                                 target="_blank"

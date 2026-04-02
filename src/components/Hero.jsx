@@ -87,8 +87,13 @@ const Hero = () => {
                         <p className="text-base md:text-lg text-gray-600">
                             Order Now for Birthdays & Special Occasions
                         </p>
-                        <div className="inline-block py-1.5 px-6 bg-gradient-to-r from-pink-100 to-blue-100 border border-white/50 rounded-full shadow-sm">
-                            <span className="text-sm md:text-base font-bold text-gray-700">Same-day orders available 💜</span>
+                        <div className="flex flex-wrap justify-center gap-3">
+                            <div className="inline-block py-1.5 px-6 bg-gradient-to-r from-pink-100 to-blue-100 border border-white/50 rounded-full shadow-sm">
+                                <span className="text-sm md:text-base font-bold text-gray-700">Same-day orders available 💜</span>
+                            </div>
+                            <div className="inline-block py-1.5 px-6 bg-gradient-to-r from-blue-100 to-pink-100 border border-white/50 rounded-full shadow-sm animate-pulse">
+                                <span className="text-sm md:text-base font-bold text-gray-700">🚀 Free Delivery within 10km</span>
+                            </div>
                         </div>
                     </motion.div>
 
@@ -156,7 +161,7 @@ const Hero = () => {
                         transition={{ delay: 1, duration: 1 }}
                         className="pt-6 text-gray-400 text-xs font-medium tracking-widest uppercase italic"
                     >
-                        ⭐ 100+ Happy Customers in Aranthangi
+                        ⭐ 1500+ Happy Customers in Aranthangi
                     </motion.p>
                 </div>
             </div>

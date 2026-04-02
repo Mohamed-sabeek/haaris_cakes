@@ -3,25 +3,37 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowLeft, MessageCircle } from "lucide-react";
 import ImageModal from "../components/ImageModal";
-import logo from "../assets/logo.png";
-
+import palkova from "../assets/palkova.png";
+import rasmalai from "../assets/rasmalai.png";
+import rosemilk from "../assets/rosemilk.jpg";
+import pista from "../assets/pista.jpg";
+import tender from "../assets/tender.jpg";
+import gulabJamoon from "../assets/gulabJamoon.jpeg";
+import gulfi from "../assets/gulfi.png";
+import kitkat from "../assets/kitkat.png";
+import whiteTruffle from "../assets/whiteTruffle.png";
+import chocoTruffle from "../assets/chocoTruffle.png";
+import chocoAlmond from "../assets/chocoAlmond.png";
+import honeyAlmond from "../assets/honeyAlmond.png";
+import nuttyBubble from "../assets/nuttyBubble.png";
+import darkFantasy from "../assets/darkFantasy.png";
 const placeholderImage = "https://via.placeholder.com/400x300?text=Cake+Image";
 
 const premiumCakes = [
-    { name: "Palkova", half: 450, full: 900, image: logo },
-    { name: "Rasmalai", half: 450, full: 800, image: null },
-    { name: "Rose Milk", half: 400, full: 700, image: null },
-    { name: "Pista Chio", half: 500, full: 1000, image: null },
-    { name: "Tender Coconut", half: 500, full: 1000, image: null },
-    { name: "Gulab Jamoon", half: 450, full: 900, image: null },
-    { name: "Gulfi", half: 500, full: 1000, image: null },
-    { name: "Kit Kat", half: 700, full: 1400, image: null },
-    { name: "White Truffle", half: 700, full: 1400, image: null },
-    { name: "Choco Truffle", half: 700, full: 1300, image: null },
-    { name: "Choco Almond", half: 500, full: 1000, image: null },
-    { name: "Honey Almond", half: 500, full: 1000, image: null },
-    { name: "Nutty Bubble", half: 500, full: 900, image: null },
-    { name: "Dark Fantasy", half: 400, full: 800, image: null },
+    { name: "Palkova", half: 450, full: 900, image: palkova },
+    { name: "Rasmalai", half: 450, full: 800, image: rasmalai },
+    { name: "Rose Milk", half: 400, full: 700, image: rosemilk },
+    { name: "Pista Chio", half: 500, full: 1000, image: pista },
+    { name: "Tender Coconut", half: 500, full: 1000, image: tender },
+    { name: "Gulab Jamoon", half: 450, full: 900, image: gulabJamoon },
+    { name: "Gulfi", half: 500, full: 1000, image: gulfi },
+    { name: "Kit Kat", half: 700, full: 1400, image: kitkat },
+    { name: "White Truffle", half: 700, full: 1400, image: whiteTruffle },
+    { name: "Choco Truffle", half: 700, full: 1300, image: chocoTruffle },
+    { name: "Choco Almond", half: 500, full: 1000, image: chocoAlmond },
+    { name: "Honey Almond", half: 500, full: 1000, image: honeyAlmond },
+    { name: "Nutty Bubble", half: 500, full: 900, image: nuttyBubble },
+    { name: "Dark Fantasy", half: 400, full: 800, image: darkFantasy },
     { name: "Ferrero Rocher", half: 900, full: 1800, image: null },
     { name: "Biscoff", half: 700, full: 1400, image: null },
     { name: "Oreo", half: 400, full: 700, image: null },
@@ -121,6 +133,16 @@ const Menu = () => {
                     <h1 className="text-4xl md:text-6xl font-black text-gray-800 tracking-tighter">
                         Our Full <span className="bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent">Menu</span>
                     </h1>
+                </div>
+
+                {/* Custom Order Message */}
+                <div className="mt-4 mb-10 flex justify-center">
+                    <div className="px-5 py-3 rounded-full bg-gradient-to-r from-pink-50 to-blue-50 border border-gray-100 shadow-sm text-sm text-gray-700 text-center max-w-xl">
+                        🎂 Need a bigger cake? 
+                        <span className="font-semibold text-pink-500">
+                            {" "}For orders above 1 Kg, contact us on WhatsApp to customize your order
+                        </span>
+                    </div>
                 </div>
 
                 {/* Premium Cakes */}
