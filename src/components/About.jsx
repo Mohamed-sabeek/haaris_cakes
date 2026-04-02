@@ -28,21 +28,28 @@ const About = () => {
                     
                     <p className="text-lg md:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-6">
                         Haaris Cake's is a home-based bakery run by <span className="text-gray-800 font-semibold">Riswana Assan</span> in Aranthangi. 
-                        We specialize in customized cakes, brownies, and waffles made with love and premium ingredients.
+                        With <span className="text-pink-500 font-black italic">5+ years of experience</span>, we specialize in customized cakes, brownies, and waffles made with love and premium ingredients.
                     </p>
+
 
                     {/* Trust markers */}
                     <div className="flex flex-col items-center gap-2 mb-12 text-gray-500">
-                        <span className="text-sm font-medium tracking-wide flex items-center gap-2">
-                            <span className="text-pink-400 text-base">✔</span> Freshly made to order
+                        <span className="text-sm font-bold tracking-wide flex items-center gap-2 text-pink-500 bg-pink-50 px-4 py-1 rounded-full border border-pink-100">
+                            ✨ 5+ Years of Baking Excellence
                         </span>
-                        <span className="text-sm font-medium tracking-wide flex items-center gap-2">
-                            <span className="text-pink-400 text-base">✔</span> Custom designs available
-                        </span>
-                        <span className="text-sm font-medium tracking-wide flex items-center gap-2">
-                            <span className="text-pink-400 text-base">✔</span> Quality ingredients only
-                        </span>
+                        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-2">
+                            <span className="text-sm font-medium tracking-wide flex items-center gap-2">
+                                <span className="text-pink-400 text-base">✔</span> Freshly made to order
+                            </span>
+                            <span className="text-sm font-medium tracking-wide flex items-center gap-2">
+                                <span className="text-pink-400 text-base">✔</span> Custom designs available
+                            </span>
+                            <span className="text-sm font-medium tracking-wide flex items-center gap-2">
+                                <span className="text-pink-400 text-base">✔</span> Quality ingredients only
+                            </span>
+                        </div>
                     </div>
+
                     
                     <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 relative">
                         {/* Background subtle depth glow */}
