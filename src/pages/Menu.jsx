@@ -73,7 +73,7 @@ const ProductCard = ({ item, category, onImageClick }) => {
                 >
                     <img
                         src={item.image || placeholderImage}
-                        alt={item.name}
+                        alt={`${item.name} from Haaris Cakes in Aranthangi`}
                         className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                 </div>

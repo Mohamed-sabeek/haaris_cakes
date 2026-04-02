@@ -78,7 +78,7 @@ const Products = () => {
                             >
                                 <img
                                     src={product.image}
-                                    alt={product.name}
+                                    alt={`${product.name} from Haaris Cakes in Aranthangi`}
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover/image:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 via-transparent to-transparent opacity-40 group-hover/image:opacity-60 transition-opacity" />

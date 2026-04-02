@@ -52,7 +52,7 @@ const About = () => {
                             <div className="w-16 h-16 mb-6 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
                                 <img 
                                     src={cakeIcon} 
-                                    alt="Custom Cakes" 
+                                    alt="Customized birthday cakes from Haaris Cakes in Aranthangi" 
                                     className="w-full h-full object-contain filter drop-shadow-md"
                                 />
                             </div>
@@ -64,7 +64,7 @@ const About = () => {
                             <div className="w-16 h-16 mb-6 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
                                 <img 
                                     src={waffleIcon} 
-                                    alt="Waffles" 
+                                    alt="Fresh and crispy Belgian waffles in Aranthangi" 
                                     className="w-full h-full object-contain filter drop-shadow-md"
                                 />
                             </div>
@@ -76,7 +76,7 @@ const About = () => {
                             <div className="w-16 h-16 mb-6 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
                                 <img 
                                     src={brownieIcon} 
-                                    alt="Brownies" 
+                                    alt="Rich chocolatey fudgy brownies - Haaris Cakes specialty" 
                                     className="w-full h-full object-contain filter drop-shadow-md"
                                 />
                             </div>

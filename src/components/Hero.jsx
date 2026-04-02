@@ -49,7 +49,7 @@ const Hero = () => {
                         <div className="relative w-52 h-52 md:w-64 md:h-64 rounded-full p-1 bg-white shadow-soft-lg transition-transform duration-500 group-hover:scale-105">
                             <img
                                 src={logo}
-                                alt="Haaris Cake's Logo"
+                                alt="Haaris Cakes Logo - Best Homemade Cakes in Aranthangi"
                                 className="w-full h-full rounded-full object-cover border-4 border-white brightness-105"
                             />
                         </div>
@@ -82,10 +82,10 @@ const Hero = () => {
                         className="space-y-3"
                     >
                         <p className="text-xl sm:text-2xl md:text-3xl text-gray-800 font-semibold leading-tight tracking-tight">
-                            Fresh Homemade Cakes in Aranthangi 🎂
+                            Best Homemade Cakes in Aranthangi 🎂
                         </p>
                         <p className="text-base md:text-lg text-gray-600">
-                            Order Now for Birthdays & Special Occasions
+                            Fresh cakes in Pudukkottai district • Custom birthday cakes and desserts
                         </p>
                         <div className="flex flex-wrap justify-center gap-3">
                             <div className="inline-block py-1.5 px-6 bg-gradient-to-r from-pink-100 to-blue-100 border border-white/50 rounded-full shadow-sm">
@@ -197,7 +197,7 @@ const Hero = () => {
                         >
                             <img
                                 src={logo}
-                                alt="Logo Full View"
+                                alt="Haaris Cakes - Premium Homemade Bakery in Aranthangi"
                                 className="w-full h-full object-cover rounded-full border-4 border-white shadow-2xl"
                             />
                         </motion.div>
