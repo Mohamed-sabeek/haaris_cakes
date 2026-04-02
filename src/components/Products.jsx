@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ImageModal from './ImageModal';
-import cakeImage from '../assets/cake.png';
-import waffleImage from '../assets/waffles.png';
-import brownieImage from '../assets/brownies.png';
+import cakeImage from '../assets/cake.webp';
+import waffleImage from '../assets/waffles.webp';
+import brownieImage from '../assets/brownies.webp';
 
 const products = [
     {

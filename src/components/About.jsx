@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 
-import cakeIcon from '../assets/cakeIcon.png';
-import waffleIcon from '../assets/waffleIcon.png';
-import brownieIcon from '../assets/brownieIcon.png';
+import cakeIcon from '../assets/cakeIcon.webp';
+import waffleIcon from '../assets/waffleIcon.webp';
+import brownieIcon from '../assets/brownieIcon.webp';
 
 const About = () => {
     return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.webp';
 import { MessageCircle, X, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { PhoneEmojiIcon } from './Icons';
