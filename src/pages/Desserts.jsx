@@ -61,7 +61,7 @@ const dessertCategories = [
 const DessertCard = ({ item, onImageClick }) => {
     const handleOrder = () => {
         const message = `Hi, I want to order ${item.name} from your Desserts menu.`;
-        const whatsappUrl = `https://wa.me/919944362457?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/917418362457?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, "_blank");
     };
 
@@ -260,7 +260,7 @@ const Desserts = () => {
                                 We curate special gift boxes for birthdays, corporate events, and celebrations! Let us make your sweet moments more memorable.
                             </p>
                             <a 
-                                href="https://wa.me/919944362457?text=Hi, I want to inquire about a custom dessert box"
+                                href="https://wa.me/917418362457?text=Hi, I want to inquire about a custom dessert box"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-400 to-blue-400 text-white px-10 py-4 rounded-full font-bold shadow-lg hover:shadow-pink-200/50 hover:scale-105 active:scale-95 transition-all text-lg"

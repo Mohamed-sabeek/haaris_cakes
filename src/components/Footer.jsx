@@ -27,13 +27,13 @@ const Footer = () => {
                             <InstagramIcon size={20} />
                         </a>
                         <a 
-                            href="tel:9944362457" 
+                            href="tel:7418362457" 
                             className="p-3 bg-blue-50 rounded-full text-blue-400 border border-blue-100 hover:bg-blue-100 hover:scale-110 transition-all shadow-sm"
                         >
                             <Phone size={20} />
                         </a>
                         <a 
-                            href="https://wa.me/919944362457" 
+                            href="https://wa.me/917418362457" 
                             target="_blank" 
                             rel="noopener noreferrer" 
                             className="p-3 bg-green-50 rounded-full text-green-500 border border-green-100 hover:bg-green-100 hover:scale-110 transition-all shadow-sm"

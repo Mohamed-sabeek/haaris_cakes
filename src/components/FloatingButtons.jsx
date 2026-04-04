@@ -16,7 +16,7 @@ const FloatingButtons = () => {
         <div className="fixed bottom-8 right-6 z-50 flex flex-col gap-4">
             {/* WhatsApp Button */}
             <motion.a
-                href="https://wa.me/919944362457?text=Hello%20I%20want%20to%20order%20a%20cake%20from%20Haaris%20Cake's"
+                href="https://wa.me/917418362457?text=Hello%20I%20want%20to%20order%20a%20cake%20from%20Haaris%20Cake's"
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -35,7 +35,7 @@ const FloatingButtons = () => {
 
             {/* Call Button */}
             <motion.a
-                href="tel:9944362457"
+                href="tel:7418362457"
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 2.2, duration: 0.5, type: 'spring' }}

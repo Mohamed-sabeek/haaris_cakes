@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 import cakeIcon from '../assets/cakeIcon.webp';
 import waffleIcon from '../assets/waffleIcon.webp';
@@ -38,9 +39,14 @@ const About = () => {
                             <span className="text-sm font-bold tracking-wide flex items-center gap-2 text-pink-500 bg-pink-50 px-4 py-1.5 rounded-full border border-pink-100 shadow-sm">
                                 ✨ 5+ Years of Baking Excellence
                             </span>
-                            <span className="text-sm font-bold tracking-wide flex items-center gap-2 text-blue-500 bg-blue-50 px-4 py-1.5 rounded-full border border-blue-100 shadow-sm">
-                                🎈 Venue Setup Available
-                            </span>
+                            <a 
+                                href="https://wa.me/917418362457?text=Hello!%20I%20want%20to%20inquire%20about%20Venue%20Setup."
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-sm font-bold tracking-wide flex items-center gap-2 text-blue-500 bg-blue-50 px-4 py-1.5 rounded-full border border-blue-100 shadow-sm hover:bg-blue-100 hover:scale-105 transition-all cursor-pointer group"
+                            >
+                                <span className="group-hover:animate-bounce">🎈</span> Venue Setup Available
+                            </a>
                         </div>
                         <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mt-2">
                             <span className="text-sm font-medium tracking-wide flex items-center gap-2 opacity-80">
@@ -61,7 +67,10 @@ const About = () => {
                         {/* Background subtle depth glow */}
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-r from-pink-200 to-blue-200 opacity-[0.05] blur-[120px] rounded-full pointer-events-none" />
 
-                        <div className="p-8 rounded-3xl bg-white border border-gray-100 hover:border-pink-200 transition-all duration-300 group flex flex-col items-center text-center shadow-lg shadow-gray-200/50 hover:scale-105 cursor-default relative overflow-hidden">
+                        <Link 
+                            to="/#chocolate-cake"
+                            className="p-8 rounded-3xl bg-white border border-gray-100 hover:border-pink-200 transition-all duration-300 group flex flex-col items-center text-center shadow-lg shadow-gray-200/50 hover:scale-105 cursor-pointer relative overflow-hidden"
+                        >
                             <div className="w-16 h-16 mb-6 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
                                 <img 
                                     src={cakeIcon} 
@@ -71,9 +80,12 @@ const About = () => {
                             </div>
                             <span className="font-bold text-xl tracking-tight text-gray-800">Custom Cakes</span>
                             <p className="text-sm text-gray-500 mt-2 leading-relaxed">Designed for your special occasions</p>
-                        </div>
+                        </Link>
 
-                        <div className="p-8 rounded-3xl bg-white border border-gray-100 hover:border-pink-200 transition-all duration-300 group flex flex-col items-center text-center shadow-lg shadow-gray-200/50 hover:scale-105 cursor-default relative overflow-hidden">
+                        <Link 
+                            to="/#belgian-waffles"
+                            className="p-8 rounded-3xl bg-white border border-gray-100 hover:border-pink-200 transition-all duration-300 group flex flex-col items-center text-center shadow-lg shadow-gray-200/50 hover:scale-105 cursor-pointer relative overflow-hidden"
+                        >
                             <div className="w-16 h-16 mb-6 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
                                 <img 
                                     src={waffleIcon} 
@@ -83,9 +95,12 @@ const About = () => {
                             </div>
                             <span className="font-bold text-xl tracking-tight text-gray-800">Waffles</span>
                             <p className="text-sm text-gray-500 mt-2 leading-relaxed">Fresh & crispy delights</p>
-                        </div>
+                        </Link>
 
-                        <div className="p-8 rounded-3xl bg-white border border-gray-100 hover:border-pink-200 transition-all duration-300 group flex flex-col items-center text-center shadow-lg shadow-gray-200/50 hover:scale-105 cursor-default relative overflow-hidden">
+                        <Link 
+                            to="/#fudgy-brownies"
+                            className="p-8 rounded-3xl bg-white border border-gray-100 hover:border-pink-200 transition-all duration-300 group flex flex-col items-center text-center shadow-lg shadow-gray-200/50 hover:scale-105 cursor-pointer relative overflow-hidden"
+                        >
                             <div className="w-16 h-16 mb-6 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
                                 <img 
                                     src={brownieIcon} 
@@ -95,7 +110,7 @@ const About = () => {
                             </div>
                             <span className="font-bold text-xl tracking-tight text-gray-800">Brownies</span>
                             <p className="text-sm text-gray-500 mt-2 leading-relaxed">Rich and chocolatey treats</p>
-                        </div>
+                        </Link>
                     </div>
 
                 </motion.div>

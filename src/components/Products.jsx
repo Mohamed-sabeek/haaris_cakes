@@ -70,11 +70,12 @@ const Products = () => {
                     {products.map((product, idx) => (
                         <motion.div
                             key={product.id}
+                            id={product.name.toLowerCase().replace(/\s+/g, '-')}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.1 }}
-                            className="group relative bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-lg shadow-gray-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
+                            className="group relative bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-lg shadow-gray-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 scroll-mt-24"
                         >
                             <Link 
                                 to={product.link}

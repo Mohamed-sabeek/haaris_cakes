@@ -119,7 +119,7 @@ const Hero = () => {
                         className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4"
                     >
                         <a
-                            href="tel:9944362457"
+                            href="tel:7418362457"
                             className="group relative flex items-center justify-center gap-3 bg-white text-gray-800 border border-gray-100 px-8 py-4 sm:py-5 rounded-full font-bold text-base hover:bg-gray-50 transition-all duration-300 hover:scale-105 shadow-md min-w-[220px]"
                         >
                             <PhoneEmojiIcon size={24} className="sm:w-8 sm:h-8 transform -rotate-12" />
@@ -127,7 +127,7 @@ const Hero = () => {
                         </a>
 
                         <a
-                            href="https://wa.me/919944362457?text=Hello%20I%20want%20to%20order%20a%20cake%20from%20Haaris%20Cake's"
+                            href="https://wa.me/917418362457?text=Hello%20I%20want%20to%20order%20a%20cake%20from%20Haaris%20Cake's"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group relative flex items-center justify-center gap-3 bg-gradient-to-r from-pink-400 to-blue-400 text-white px-8 py-4 sm:py-5 rounded-full font-bold text-base hover:scale-105 hover:shadow-lg transition-all duration-300 shadow-md min-w-[220px]"
@@ -158,6 +158,23 @@ const Hero = () => {
                                 </button>
                             </Link>
                         </div>
+
+                        {/* Venue Setup Decoration */}
+                        <motion.div 
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 1, duration: 0.8 }}
+                            className="mt-6"
+                        >
+                            <a 
+                                href="https://wa.me/917418362457?text=Hello!%20I%20want%20to%20inquire%20about%20Venue%20Setup."
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-blue-50 to-white border border-blue-100 rounded-full text-sm font-bold text-blue-600 shadow-sm hover:shadow-md hover:scale-105 transition-all cursor-pointer group"
+                            >
+                                <span className="group-hover:animate-bounce">🎈</span> Venue Setup Available
+                            </a>
+                        </motion.div>
                     </motion.div>
 
 

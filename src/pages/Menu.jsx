@@ -71,7 +71,7 @@ const regularCakes = [
 const ProductCard = ({ item, category, onImageClick }) => {
     const handleOrder = (size) => {
         const message = `Hi, I want to order ${item.name} (${category}) (${size})`;
-        const whatsappUrl = `https://wa.me/919944362457?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/917418362457?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, "_blank");
     };
 

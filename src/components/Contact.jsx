@@ -30,11 +30,11 @@ const Contact = () => {
                         {/* Buttons Grid/Stack */}
                         <div className="flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-auto">
                             <a 
-                                href="tel:9944362457" 
+                                href="tel:7418362457" 
                                 className="group flex items-center justify-center gap-3 bg-blue-50 text-blue-500 border border-blue-100 px-8 py-4 rounded-full font-bold hover:bg-blue-100 hover:scale-105 transition-all text-base sm:text-lg shadow-md w-full sm:w-auto"
                             >
                                 <Phone size={20} className="group-hover:animate-bounce" />
-                                99443 62457
+                                74183 62457
                             </a>
                             <a 
                                 href="https://instagram.com/haaris_home_madecakes_atg" 
@@ -59,7 +59,7 @@ const Contact = () => {
                             "Every cake we bake is a labor of love. We can't wait to be part of your celebrations!"
                         </p>
                         <a 
-                            href="https://wa.me/919944362457?text=Hello%20I%20want%20to%20order%20a%20cake%20from%20Haaris%20Cake's" 
+                            href="https://wa.me/917418362457?text=Hello%20I%20want%20to%20order%20a%20cake%20from%20Haaris%20Cake's" 
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-3 text-lg sm:text-xl font-bold text-green-600 hover:text-green-700 transition-colors group"
