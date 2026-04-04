@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '../assets/logo.webp';
-import { MessageCircle, X, Heart } from 'lucide-react';
+import { MessageCircle, X, Heart, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { PhoneEmojiIcon } from './Icons';
 import OrderNotice from './OrderNotice';
@@ -95,6 +95,16 @@ const Hero = () => {
                                 <span className="text-sm md:text-base font-bold text-gray-700">🚀 Free Delivery within 10km</span>
                             </div>
                         </div>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 5 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.5 }}
+                        className="flex items-center justify-center gap-2 text-gray-600 mt-3 text-sm md:text-base"
+                    >
+                        <Clock size={16} className="text-pink-400/80" />
+                        <span className="font-medium">Open Daily: 10:00 AM – 9:00 PM</span>
                     </motion.div>
 
                     <motion.div
