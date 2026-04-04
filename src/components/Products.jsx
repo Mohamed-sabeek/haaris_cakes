@@ -98,7 +98,7 @@ const Products = () => {
 
                             <div className="p-8">
                                 <Link to={product.link}>
-                                    <h4 className="text-2xl font-bold mb-3 text-gray-800 hover:text-pink-400 transition-colors cursor-pointer">
+                                    <h4 className="text-lg font-semibold leading-tight text-gray-800 mb-3 hover:text-pink-400 transition-colors cursor-pointer line-clamp-2 break-words">
                                         {product.name}
                                     </h4>
                                 </Link>

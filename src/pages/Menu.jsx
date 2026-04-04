@@ -93,7 +93,7 @@ const ProductCard = ({ item, category, onImageClick }) => {
                         className="w-full h-32 sm:h-40 lg:h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                 </div>
-                <h3 className="text-base sm:text-lg lg:text-xl font-bold text-gray-800 mb-2 sm:mb-4 group-hover:text-pink-400 transition-colors line-clamp-1">
+                <h3 className="text-lg font-semibold leading-tight text-gray-800 mb-2 sm:mb-4 group-hover:text-pink-400 transition-colors line-clamp-2 break-words">
                     {item.name}
                 </h3>
                 <div className="space-y-1.5 sm:space-y-2 mb-4 sm:mb-6">
