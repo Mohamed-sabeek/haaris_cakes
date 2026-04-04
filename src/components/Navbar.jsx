@@ -20,6 +20,7 @@ const Navbar = () => {
         { name: 'Cakes', href: '/cakes', isNewPage: true },
         { name: 'Desserts', href: '/desserts', isNewPage: true },
         { name: 'About', href: '/#about' },
+        { name: 'Location', href: '/#location' },
         { name: 'Contact', href: '/#contact' },
     ];
 

@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 import { MapPin, Navigation, ExternalLink } from 'lucide-react';
 
 const Location = () => {
-    const latitude = "10.172833";
-    const longitude = "78.992417";
+    const latitude = "10.172739";
+    const longitude = "78.992559";
     const mapUrl = `https://www.google.com/maps?q=${latitude},${longitude}&z=19&output=embed`;
-    const externalMapUrl = `https://www.google.com/maps/search/?api=1&query=Haaris+Home+Made+Cake's+Aranthangi`;
+    const externalMapUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
 
     return (
         <section id="location" className="py-24 md:py-32 bg-white">
@@ -86,9 +86,9 @@ const Location = () => {
                         <div className="w-full h-[400px] rounded-2xl overflow-hidden border border-gray-100 shadow-xl relative group">
                             <iframe
                                 title="Haaris Home Made Cake's Location"
-                                src={`https://www.google.com/maps?q=10.172833,78.992417&z=19&output=embed`}
+                                src={mapUrl}
                                 width="100%"
-                                height="400"
+                                height="100%"
                                 style={{ border: 0 }}
                                 loading="lazy"
                                 className="rounded-2xl"
