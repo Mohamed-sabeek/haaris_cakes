@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import FloatingButtons from './components/FloatingButtons';
 import Menu from './pages/Menu';
 import Desserts from './pages/Desserts';
+import VenueSetup from './pages/VenueSetup';
 import ScrollToSection from './components/ScrollToSection';
 import { useEffect } from 'react';
 
@@ -44,6 +45,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/cakes" element={<Menu />} />
           <Route path="/desserts" element={<Desserts />} />
+          <Route path="/venue-setup" element={<VenueSetup />} />
           <Route path="/menu" element={<Navigate to="/cakes" replace />} />
         </Routes>
         <Footer />

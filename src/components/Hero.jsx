@@ -166,14 +166,12 @@ const Hero = () => {
                             transition={{ delay: 1, duration: 0.8 }}
                             className="mt-6"
                         >
-                            <a 
-                                href="https://wa.me/917418362457?text=Hello!%20I%20want%20to%20inquire%20about%20Venue%20Setup."
-                                target="_blank"
-                                rel="noopener noreferrer"
+                            <Link 
+                                to="/venue-setup"
                                 className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-blue-50 to-white border border-blue-100 rounded-full text-sm font-bold text-blue-600 shadow-sm hover:shadow-md hover:scale-105 transition-all cursor-pointer group"
                             >
                                 <span className="group-hover:animate-bounce">🎈</span> Venue Setup Available
-                            </a>
+                            </Link>
                         </motion.div>
                     </motion.div>
 

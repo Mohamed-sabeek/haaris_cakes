@@ -19,6 +19,7 @@ const Navbar = () => {
         { name: 'Home', href: '/#home' },
         { name: 'Cakes', href: '/cakes', isNewPage: true },
         { name: 'Desserts', href: '/desserts', isNewPage: true },
+        { name: 'Venue Setup', href: '/venue-setup', isNewPage: true },
         { name: 'About', href: '/#about' },
         { name: 'Location', href: '/#location' },
         { name: 'Contact', href: '/#contact' },

@@ -39,14 +39,12 @@ const About = () => {
                             <span className="text-sm font-bold tracking-wide flex items-center gap-2 text-pink-500 bg-pink-50 px-4 py-1.5 rounded-full border border-pink-100 shadow-sm">
                                 ✨ 5+ Years of Baking Excellence
                             </span>
-                            <a 
-                                href="https://wa.me/917418362457?text=Hello!%20I%20want%20to%20inquire%20about%20Venue%20Setup."
-                                target="_blank"
-                                rel="noopener noreferrer"
+                            <Link 
+                                to="/venue-setup"
                                 className="text-sm font-bold tracking-wide flex items-center gap-2 text-blue-500 bg-blue-50 px-4 py-1.5 rounded-full border border-blue-100 shadow-sm hover:bg-blue-100 hover:scale-105 transition-all cursor-pointer group"
                             >
                                 <span className="group-hover:animate-bounce">🎈</span> Venue Setup Available
-                            </a>
+                            </Link>
                         </div>
                         <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mt-2">
                             <span className="text-sm font-medium tracking-wide flex items-center gap-2 opacity-80">
